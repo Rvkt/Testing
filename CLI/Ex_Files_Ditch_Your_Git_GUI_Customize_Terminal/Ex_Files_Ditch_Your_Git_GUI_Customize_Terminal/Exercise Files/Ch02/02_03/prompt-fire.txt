@@ -1,0 +1,33 @@
+=================================================
+Boom & Fire CLI Prompt Code
+Place this in your ~/.bashrc file
+=================================================
+
+
+
+*************************************************
+FINAL PROMPT CODE:
+
+PS1='\[\033[41m\] \h \[\033[40m\]\[\033[01;33m\] 💥 \w 🔥 \[\033[00m\]'
+*************************************************
+
+
+
+
+LINES EXPLAINED:
+-------------------------------------------------
+PS1='
+	This is the opening tag for telling the shell that we're adding customizations to our prompt.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[41m\] \h
+	This is the red background for the computer name part of the prompt line.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[40m\]\[\033[01;33m\] 💥 \w 🔥
+	This is the black background and yellow text color for the current working path in the prompt line, along with some emojis.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[00m\] '
+	This resets the users real-time prompt input text to still be its original white color.
+-------------------------------------------------

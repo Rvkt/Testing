@@ -1,0 +1,23 @@
+# Navigation Aliases
+alias docs= "cd ~/Documents"
+alias github= "cd ~/Documents/GitHub"
+alias down= "cd ~/Downloads"
+alias desk= "cd ~/Desktop"
+alias apps= "cd ~/Applications"
+alias pics= "cd ~/Pictures"
+alias music= "cd ~/Music"
+
+# Git Aliases
+alias add= "git add"
+alias addall= "git add ."
+alias cim= "git commit -m"
+alias ci= "git commit"
+alias co= "git checkout"
+alias st= "git status"
+alias br= "git branch"
+alias diff= "git diff"
+alias hist= "git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+
+# Typos Correction Aliases
+alias got= "git"
+alias get= "git"

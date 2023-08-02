@@ -1,0 +1,20 @@
+=================================================
+Your CLI won't automatically pull your Git branch.
+We have to find a file that will let you pull that information.
+=================================================
+
+
+
+In your CLI, enter:
+	find / -name 'git-prompt.sh' -type f -print -quit 2>/dev/null
+
+
+It should show you a path to where this file is located on your computer, such as:
+	/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+
+
+Copy that path, and in the top of your ~/.bashrc or ~/.zshrc file, enter:
+	source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh (or whatever path you got)
+
+
+This tells the prompt where it can pull your Git branch information from.

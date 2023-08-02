@@ -1,0 +1,42 @@
+=================================================
+Hearts CLI Prompt Code
+Place this in your ~/.bashrc file
+=================================================
+
+
+
+*************************************************
+FINAL PROMPT CODE:
+
+PS1='\[\033[91m\]\d \[\033[31m\]♥\[\033[40m\]\[\033[91m\] \@ \[\033[95m\] \u \[\033[40m\]\[\033[94m\]\w\[\033[01;91m\]$(__git_ps1) ❤️️ 💜💙 \[\033[00m\] '
+*************************************************
+
+
+
+///////////////////////////////// TO DO: finish explaining these
+LINES EXPLAINED:
+-------------------------------------------------
+PS1='
+	This is the opening tag for telling the shell that we're adding customizations to our prompt.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[46m\]\[\033[30m\] \u@\h 
+	This is the cyan background and black text color for the username and computer name part of the prompt line.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[40m\] \[\033[33m\]\w
+	This is the black background and yellow text color for the current working path in the prompt line.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[01;36m\]$(__git_ps1) 
+	This is bolded text and cyan text color for the Git branch in the prompt line.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[00;43m\]\[\033[30m\] \$ 
+	This is normal text, yellow background, and black text color for the ending '$' symbol in the prompt line.
+	You can replace this symbol with another character, if you choose to.
+-------------------------------------------------
+-------------------------------------------------
+\[\033[00m\] '
+	This resets the users real-time prompt input text to still be its original white color.
+-------------------------------------------------
